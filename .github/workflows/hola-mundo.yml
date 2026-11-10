@@ -1,0 +1,12 @@
+name: Mi Primer Workflow
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  ejecutar-tarea:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Saludo Inicial
+        run: echo "¡Felicidades! Tu Actions desde git init ha funcionado."
